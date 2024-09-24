@@ -1,4 +1,4 @@
-const socket = io.connect('http://localhost:4000');
+const socket = io.connect('https://video-chat-nodejs-fotv.onrender.com/');
 const $ = selector => document.querySelector(selector);
 
 // Query DOM
