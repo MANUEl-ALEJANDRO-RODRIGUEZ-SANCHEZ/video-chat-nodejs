@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Video en Vivo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LAN-Video Chat NodeJS</h1>
+        <p>Welcome to Manuel's Live Video Chat!</p>
+        <p>Type your handle and join the video chat!</p>
+    </header>
+
+    <div id="manuel-video-chat">
+        <div id="video-container">
+            <!-- Video streams -->
+            <video id="local-video" autoplay muted></video>
+            <video id="remote-video" autoplay></video>
+        </div>
+        <input type="text" id="handle" placeholder="Handle">
+        <button id="join">Join Video Chat</button>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
